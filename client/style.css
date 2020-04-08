@@ -1,0 +1,103 @@
+body, html{
+  height: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+#drop-area {
+  border: 2px dashed #ccc;
+  border-radius: 20px;
+  width: 480px;
+  font-family: sans-serif;
+  padding: 30px;
+}
+#drop-area.highlight {
+  border-color: purple;
+}
+#image{
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -webkit-transform: translateY(50%);
+  transform: translateX(-50%);
+}
+#canvas{
+  border-color: #3AAFA9;
+  border-radius: 5px;
+}
+.uploadtext{
+  padding: 1em;
+  font-family: 'Comic Neue', cursive;
+  font-size: 1.2rem;
+}
+.header{
+  height:60px;
+  background-color: #ffffff;
+  padding: 1em;
+  border-radius: 25px;
+}
+
+#logo{
+  background-color: grey;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 2px 2px black;
+  font-family: 'Quicksand', sans-serif;
+}
+.button{
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border: none;
+  background: #89ebf0;
+  color: #404040 !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px;
+  background: none;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.3s ease 0s;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  font-family: 'Fredoka One', cursive;
+  text-decoration: none;
+}
+.button:hover{
+  color: white !important;
+  font-weight: 700 !important;
+  background: #89ebf0;
+  letter-spacing: 3px;
+  transition: all 0.3s ease 0s;
+}
+
+.upload {
+  border: none;
+  background: #404040;
+  color: #ffffff !important;
+  font-weight: 100;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  font-family: 'Fredoka One', cursive;
+  text-decoration: none;
+}
+.upload:hover {
+  color: #404040 !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px;
+  background: none;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.3s ease 0s;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="jquery-3.4.1.min.js"></script type="text/javascript">
+    <script src="/socket.io/socket.io.js"></script>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title></title>
+  </head>
+  <body>
+  <div id = "drop-area">
+  <form action="/action_page.php">
+    <label for="img" class = "uploadtext">Select image or drag and drop it here:</label>
+    <input type="file" id="img" name="img" accept="image/*">
+    <button type="button" id="uploadButton" class = "upload">Upload Meme</button>
+  </form>
+  </div>
+  <canvas id = "canvas"></canvas>
+  <script src="upload.js"></script>
+  </body>
+</html>
