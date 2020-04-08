@@ -93,6 +93,6 @@ document.getElementById("uploadButton").addEventListener("click", function(){
   loaded = true;
   imgx = 0;
   imgy = 0;
-  sock.emit("uploadimage",  canvas.toDataURL());
+  sock.emit("HIDIDEN",  canvas.toDataURL());
 
 });
