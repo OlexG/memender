@@ -9,9 +9,9 @@ const io = require('socket.io').listen(server);
 const clientPath = `${__dirname}/../client`;
 //config cloudinary
 cloudinary.config({
-  cloud_name: 'dobx32ktv',
-  api_key: '857862296571646',
-  api_secret: 'urabaH_aHrjDnhPWiCtUqMnDu2g'
+  cloud_name: 'HIDDEN',
+  api_key: 'HIDDEN',
+  api_secret: 'HIDDEN'
 });
 
 
@@ -47,7 +47,7 @@ io.on('connection', function (sock) {
   for(var x = 0; x < images.length; x++){
       sock.emit("delivermeme", {url: cloudinary.url(images[x].name), name: images[x].name, rank: images[x].rank});
   }
-  sock.on("ratepositive", (curname) => {
+  sock.on("HIDDEN", (curname) => {
     for(var x = 0; x < images.length; x++){
       if (images[x].name === curname){
         images[x].rank ++;
@@ -61,7 +61,7 @@ io.on('connection', function (sock) {
       })
     }
   });
-  sock.on("ratenegative", (curname) => {
+  sock.on("HIDDEN", (curname) => {
     for(var x = 0; x < images.length; x++){
       if (images[x].name === curname){
         images[x].rank --;
